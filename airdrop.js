@@ -28,14 +28,19 @@ function airdropTokens(users, callback) {
             "contractPayload":{
                 "symbol": config.token.symbol,
                 "to": users[x].username,
-                "quantity": users[x].reward,
-                "memo": memo
+                "quantity": users[x].reward                
             }
         }
+        if (config.airdrop_type == "stake") {
+            json.contractAction = "delegate"
+        }
+        else if (config.airdrop_type == "liquid" || config.airdrop_type == "")
+            json.contractPayload["memo"] = memo
+        
         jsonARR[batch].push(json)
     }
     function doCustomJSON(batch_no) {
-        steem.broadcast.customJson(config.keys.active, [config.username], [], "ssc!-mainnet1", JSON.stringify(jsonARR[batch_no - 1]), function(err, result) {
+        steem.broadcast.customJson(config.keys.active, [config.username], [], "ssc-mainnet1", JSON.stringify(jsonARR[batch_no - 1]), function(err, result) {
             if (!err) {
                 console.log("TRANSACTIONS COMPLETED FOR BATCH NO [".green, batch_no, "]".green)                
             }
