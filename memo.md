@@ -1,0 +1,1 @@
+Congratulations! you have earned PAL stakes in the Airdrop, checkout palnet.io
