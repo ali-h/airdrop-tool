@@ -65,12 +65,14 @@ function createUsersArray(raw, callback) {
     var usersARR = raw.split('\n')
     if (!usersARR[0] == "") {
         for (index in usersARR) {
-            var this_user = usersARR[index].split(' ')
-            var jsonOBJ = {
-                "username" : this_user[0],
-                "reward" : this_user[1].replace("\r", "")
+            if (!usersARR[index] == "") {
+                var this_user = usersARR[index].split(' ')
+                var jsonOBJ = {
+                    "username" : this_user[0],
+                    "reward" : this_user[1].replace("\r", "")
+                }
+                finalARR.push(jsonOBJ)
             }
-            finalARR.push(jsonOBJ)
         }
         callback(finalARR)
     }
