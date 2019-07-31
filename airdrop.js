@@ -66,7 +66,7 @@ function createUsersArray(raw, callback) {
     if (!usersARR[0] == "") {
         for (index in usersARR) {
             if (!usersARR[index] == "") {
-                var this_user = usersARR[index].split(' ')
+                var this_user = usersARR[index].split(',')
                 var jsonOBJ = {
                     "username" : this_user[0],
                     "reward" : this_user[1].replace("\r", "")
