@@ -32,7 +32,7 @@ function airdropTokens(users, callback) {
             }
         }
         if (config.airdrop_type == "stake") {
-            json.contractAction = "delegate"
+            json.contractAction = "stake"
         }
         else if (config.airdrop_type == "liquid" || config.airdrop_type == "")
             json.contractPayload["memo"] = memo
