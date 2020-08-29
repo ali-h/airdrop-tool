@@ -1,26 +1,26 @@
 {
   "name": "airdrop-tool",
   "version": "1.0.0",
-  "description": "An Airdrop tool for Steem-Engine tokens.",
+  "description": "An Airdrop tool for Hive-Engine tokens.",
   "main": "airdrop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alihassanah/airdrop-tool.git"
+    "url": "git+https://github.com/ali-h/airdrop-tool.git"
   },
   "keywords": [
-    "js",
+    "hive",
     "steem",
     "airdrop",
-    "steem-engine"
+    "hive-engine"
   ],
   "author": "Ali H",
   "bugs": {
-    "url": "https://github.com/alihassanah/airdrop-tool/issues"
+    "url": "https://github.com/ali-h/airdrop-tool/issues"
   },
-  "homepage": "https://github.com/alihassanah/airdrop-tool#readme",
+  "homepage": "https://github.com/ali-h/airdrop-tool#readme",
   "dependencies": {
     "colors": "^1.3.3",
     "steem": "^0.7.5"
