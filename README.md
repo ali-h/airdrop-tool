@@ -1,5 +1,5 @@
 # Airdrop-Tool
-An Airdrop tool for Steem-Engine tokens.
+An Airdrop tool for Hive-Engine tokens.
 
 It can be used to do airdrops of tokens in liquid and also stake form. It uses a Simple Distribution method and 25 transactions per Steem Custom JSON.
 
@@ -46,6 +46,6 @@ every run of this file will do a airdrop based on the configuration you did.
 ***
 
 ## Development
-Encounter any issue or Bugs, Please report them [Here](https://github.com/alihassanah/airdrop-tool/issues).
+Encounter any issue or Bugs, Please report them [Here](https://github.com/ali-h/airdrop-tool/issues).
 
 Bot Developed by @ali-h on hive, @Ali H#7057 on Discord.
