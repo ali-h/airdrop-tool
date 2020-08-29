@@ -1,9 +1,9 @@
-const steem = require('steem')
+const hive = require('@hiveio/hive-js')
 const colors = require('colors')
 const config = require('./config.json')
 const fs = require("fs")
 const memo = fs.readFileSync("./memo.md", "utf-8")
-steem.api.setOptions({
+hive.api.setOptions({
     url: 'https://anyx.io'
 })
 const rawUsers = fs.readFileSync("./rawFiles/" + config.raw_file_name, "utf-8")
@@ -40,7 +40,7 @@ function airdropTokens(users, callback) {
         jsonARR[batch].push(json)
     }
     function doCustomJSON(batch_no) {
-        steem.broadcast.customJson(config.keys.active, [config.username], [], "ssc-mainnet1", JSON.stringify(jsonARR[batch_no - 1]), function(err, result) {
+        hive.broadcast.customJson(config.keys.active, [config.username], [], "ssc-mainnet-hive", JSON.stringify(jsonARR[batch_no - 1]), function(err, result) {
             if (!err) {
                 console.log("TRANSACTIONS COMPLETED FOR BATCH NO [".green, batch_no, "]".green)                
             }
