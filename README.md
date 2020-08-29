@@ -48,4 +48,4 @@ every run of this file will do a airdrop based on the configuration you did.
 ## Development
 Encounter any issue or Bugs, Please report them [Here](https://github.com/alihassanah/airdrop-tool/issues).
 
-Bot Developed by @ali-h on steemit, @Ali H#7057 on Discord.
+Bot Developed by @ali-h on hive, @Ali H#7057 on Discord.
