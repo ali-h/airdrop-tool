@@ -17,6 +17,7 @@ To run Airdrop it has to be configured first, it is easy and simple:
     "token" : {
         "symbol" : "" // symbol of the token to airdrop from
     },
+    "api": "", // rpc node
     "airdrop_type" : "", // airdrop type it can be liquid or stake
     "raw_file_name" : "" // file name which contains the name of users with rewards.
 }
