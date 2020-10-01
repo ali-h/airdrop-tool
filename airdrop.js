@@ -4,7 +4,7 @@ const config = require('./config.json')
 const fs = require("fs")
 const memo = fs.readFileSync("./memo.md", "utf-8")
 hive.api.setOptions({
-    url: 'https://anyx.io'
+    url: config.api
 })
 const rawUsers = fs.readFileSync("./rawFiles/" + config.raw_file_name, "utf-8")
 
