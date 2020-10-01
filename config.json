@@ -6,6 +6,7 @@
     "token" : {
         "symbol" : ""
     },
-    "airdrop_type" : "",
-    "raw_file_name" : ""
+    "api": "https://api.deathwing.me/",
+    "airdrop_type" : "liquid",
+    "raw_file_name" : "sample.txt"
 }
