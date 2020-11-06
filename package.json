@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ali-h/airdrop-tool#readme",
   "dependencies": {
-    "@hiveio/hive-js": "^0.8.4",
+    "@hiveio/hive-js": "^0.8.10",
     "colors": "^1.3.3"
   }
 }
